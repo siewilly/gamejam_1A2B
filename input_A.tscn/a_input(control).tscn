@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://vulb8x5c5hld"]
+
+[ext_resource type="Script" uid="uid://ck1rrplutbudn" path="res://input_A.tscn/a_input(control).gd" id="1_3q4qy"]
+
+[node name="A_input(Control)" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3q4qy")
+
+[node name="ToButtun" type="Button" parent="."]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 289.0
+offset_right = 640.0
+offset_bottom = 356.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 229.0
+offset_right = 557.0
+offset_bottom = 296.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 94.0
+offset_right = 579.0
+offset_bottom = 173.0
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="pressed" from="ToButtun" to="." method="_on_to_buttun_pressed"]
